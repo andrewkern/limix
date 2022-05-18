@@ -246,7 +246,7 @@ def _check_uniqueness(data, dims):
 
 
 def _match_samples(data, dims):
-    from pandas.core.index import InvalidIndexError
+    from pandas.errors import InvalidIndexError
 
     inc_msg = "The provided trait and {} arrays are sample-wise incompatible."
 
